@@ -11,7 +11,7 @@
     <category citation-format="author"/>
     <category field="generic-base"/>
     <summary>A modified version of the MLA 8th edition handbook style, for citing readings on syllabuses.</summary>
-    <updated>2017-08-13T19:02:26+00:00</updated>
+    <updated>2017-08-19T13:41:09+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -146,7 +146,7 @@
       <if type="book chapter paper-conference motion_picture" match="any">
         <date date-parts="year" form="numeric" variable="issued" prefix=" (" suffix=")"/>
       </if>
-      <else-if type="article-journal article-magazine" match="any">
+      <else-if type="article-journal article-magazine webpage" match="any">
         <date date-parts="year-month" form="text" variable="issued" prefix=" (" suffix=")"/>
       </else-if>
       <else-if type="speech" match="none">
@@ -249,7 +249,6 @@
           <text macro="container2-title"/>
           <text macro="container2-location"/>
         </group>
-        <text macro="accessed"/>
       </group>
     </layout>
   </bibliography>
